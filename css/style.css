@@ -1,0 +1,298 @@
+
+* {
+    font-family:'Inter';
+    font-size: 18px;
+       }
+body {
+  background-color: #F3F5FC;
+    max-width: 90vw;
+    max-height:95vw;
+    font-weight: 200; 
+    padding: 5px;
+  }
+  header{
+    height: 2%;
+     }
+.flexbox-container {
+	display: -ms-flex;
+	display: -webkit-flex;
+  display: flex;
+
+}
+
+.flexbox-container > div {
+ 
+	padding: 5px;
+  margin-top: 3%;
+  flex:50%
+  }
+
+.flexbox-container > div:first-child {
+  background-color: white;
+  margin-right: 10px;
+  flex:50%
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+    margin-left: 15px;
+    transition: width 2s, height 2s, transform 2s;
+    animation-duration: 2s;
+    animation-name:slidein;
+    }
+  
+    @keyframes slidein {
+        from {
+          margin-left: 0%;
+          margin-top: 10%;
+          width: 300px;
+          height: 300px;
+          opacity:30;
+          transform: rotate(360deg);
+        }
+        0%   {background-color:rgb(96, 133, 235); left:0px; top:0px;opacity: 10%;border-radius: 24px;}
+  25%  {background-color:rgb(11, 224, 235); left:200px; top:0px;opacity: 10%;}
+  50%  {background-color:rgb(69, 69, 213); left:200px; top:200px;opacity: 10%;}
+  75%  {background-color:blue; left:0px; top:200px;opacity: 10%;}
+  100% {background-color:lightblue; left:0px; top:0px;opacity: 10%;border-radius: 24px;}
+      
+        to {
+          margin-bottom: 50%;
+          width: 10%;
+          opacity: 100;
+        }
+      }
+      .logo2{
+        width: 100px;
+        height: 100px;
+        padding-top: 0px;
+        margin-left: 25px;
+        transition: width 2s, height 2s, transform 2s;
+        animation-duration: 2s;
+        animation-name:rightin;
+        }
+        
+    @keyframes rightin {
+      from {
+        margin-left: 30%;
+        margin-top: 100%;
+        width: 300px;
+        height: 300px;
+        opacity:30;
+        transform: rotate(360deg);
+      }
+      0%   {left:0px; top:0px;opacity: 10%;border-radius: 24px;}
+25%  {left:200px; top:0px;opacity: 10%;}
+50%  {left:200px; top:200px;opacity: 10%;}
+75%  {left:20px; top:200px;opacity: 10%;}
+100% {left:20px; top:0px;opacity: 10%;border-radius: 24px;}
+    
+      to {
+        margin-left: 0%;
+        margin-bottom: 50%;
+        width: 10%;
+        opacity: 100;
+      }
+    }
+    a{
+      background-color:#F3F5FC;
+      opacity: 100;
+      font-size: 25px;
+      padding-right: 20px;
+      gap: 5px; ;
+      text-align: right;
+      float: right;
+      }
+      a:hover{
+        font-size: 35px;
+        color:#a1a6f0;
+      }
+    li{
+      background-color: #F3F5FC;
+list-style-type: none;
+    }
+.text-area {
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    color: #0A3871;
+    margin-top: 30px;
+    padding: 6px;
+    text-transform: lowercase;
+}
+::placeholder { color: #0A3871; }
+.text-area:focus {
+      outline: none;
+    }
+
+.mensaje{
+    background-color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 4px;
+    color: #180472;
+    /*margin-left: 98px;*/
+    margin-top: 30px;
+    padding: 6px;
+   /*position: fixed;*/
+}
+.mensaje:focus {
+    outline: none;
+}
+
+h2{
+  margin-top: 20px;
+  padding: 3px;
+  font-size: 24px;
+  font-weight: 300;
+  color: #13083b;
+  font-style: italic;
+  text-align: center;
+  animation:backwards;
+}
+h3{
+  padding: 3px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #241b75;
+  text-shadow: #982f50;
+  font-style: italic;
+  text-align: center;
+  background-color:rgb(180, 225, 245);
+  border-radius: 200px;
+  margin-top: 10px;
+  left: 0;
+  transition: left 5s cubic-bezier(0, 0, 1, 1);
+  animation-duration: 2s;
+  animation-name: anitex;
+}
+@keyframes anitex{
+  from{
+  color: #ffffff;
+  font: normal 40px Varela Round, sans-serif;
+  height: 40px;
+  left: 0;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  background-color:rgb(180, 225, 245);
+  border-radius: 200px;
+  margin-top: 10px;
+  animation: move linear 2000ms infinite;
+  z-index: 2
+  }
+  to{
+  letter-spacing: 10px;
+  text-align: center;
+  text-transform: lowercase;
+  }
+}
+.mune{
+  width: 200px;
+  height: 200px;
+  padding-top: 1px;
+  margin-top: 1px;
+  margin-left: 25px;
+  /*width: 15%;*/
+  align-items: top;
+  justify-content: top;
+  animation-duration: 2s;
+  animation-name: anima;
+  }
+@keyframes anima{
+  from{
+    width: 50px;
+    height: 50px;
+    margin-top: 1px;
+    margin-left: 25px;
+    align-items: top;
+    justify-content: top;
+    }
+  to{
+  width: 200px;
+  height: 200px;
+  margin-top: 1px;
+  margin-left: 55px;
+  }
+}
+li{
+  font-size: 40px;
+  color: #13083b;
+  text-align: right;
+  background-color: antiquewhite;
+}
+p {
+  font-size: 18px;
+  padding: 5px;
+  margin-top: 5px;
+  left: 0;
+  color: #5b5456;
+  animation-duration: 3s;
+  animation-name: anitext;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+button{
+    font-size: 16px;
+    background-color:#0A3871;
+    color: white;
+    border: none;
+    /*align-items: flex-start;*/
+    border-radius: 24px;
+    padding: 14px;
+    gap: 10px;
+    margin-top: 10px;
+    width: 150px;
+    height: 45px;
+    z-index: 1;
+   }
+     
+button:hover{
+    cursor: pointer;
+    color: #272626;
+    background-color: rgb(168, 168, 224);
+    box-shadow: 1px 0px 5px rgb(67, 67, 95, 1);
+}
+
+h5{
+  font-size: 16px;
+  color: #272626;
+  font-weight: 100;
+}
+.informacion{
+  font-size: 20px;
+  font-style: italic;
+  border: none;
+  border-radius: 14px;
+  color: #0A3871;
+
+}
+@media (max-width: 800px) {
+  body {
+    width: 100%;
+    padding: 0%;
+  }
+  .flexbox-container{
+    flex-direction: column;
+    padding: 0px;
+  }
+  a{
+    background-color:#F3F5FC;
+    opacity: 80;
+    font-size: 20px;
+    padding-right: 20px;
+    gap: 5px; ;
+    text-align: right;
+    float: top;
+    }
+  @media (max-width: 400px) {
+    .flexbox-container{
+      flex-direction: column;
+    padding: 0px;  }
+    a{
+      opacity: 0;
+    }
+}

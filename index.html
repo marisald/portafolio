@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="mage/x-icon" href="img/flavicon.ico">
+    <title>Encriptador Marisald</title>
+</head>
+<body>
+<div class="flexbox-container">
+       <img class="logo" src="img/Logo.png" alt="logo de alura">
+        <img class="logo2" src="img/alura.png" alt="letras">
+                   
+    <div>
+            <textarea class="text-area" id="text1"cols="40" rows="5"  placeholder="Ingrese el texto aqui"></textarea>
+               <p></p>
+              <div class="botones">
+                 <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+              </div>
+          <!-- </div> -->
+    </div>
+    <div class="home"> 
+        <a href="" class="fa-solid fa-house" onclick="home()"></a>
+           <textarea class="mensaje" cols="40" rows="5" id="mensaje">
+           </textarea>
+                <div class="copiar">
+                    <button class="copiar" onclick="copiar()">Copiar</button>
+                    <h3 class="seha">¡¡Se ha encriptado correctamente!!</h3>
+                </div>  
+             <br>
+           <h2 class="noha"><i class="fa-solid fa-pen"></i> " No ha escrito ningún mensaje todavía"</h2>
+          <img src="img/Muñeco.png" class="mune" id="imgp" alt="imagen pres">
+      </div> 
+     </div>
+    <script src="https://kit.fontawesome.com/bc5ba52800.js" crossorigin="anonymous"></script>
+    <script src="js/solucion1.js"></script>
+</body>
+</html>
